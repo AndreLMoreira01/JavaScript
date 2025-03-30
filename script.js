@@ -101,6 +101,51 @@ converterFahrenheit(10);
 
 //11) Verificar Ano Bissexto:
 //Crie uma função que verifique se um ano fornecido pelo usuário é bissexto.
+function anoBissexto(ano) {
+    if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
+        console.log('O ano é bissexto!');
+    } else {
+        console.log('O ano não é bissexto!');
+    }
+}
+
+// Testando a função
+anoBissexto(2020); // O ano é bissexto!
+anoBissexto(2021); // O ano não é bissexto!
+
+
+//12) Contar até um número especificado:
+//Crie uma função que conte de 1 até o número fornecido pelo usuário.
+function contadorNumeros(numero){
+    for (let i = 1; i <= numero; i++){
+        console.log(i);
+    }
+}
+contadorNumeros(4);//Exemplo contando até o número 4
+
+//13) Calcular o Fatorial de um Número:
+//Crie uma função que calcule o fatorial de um número.
+function calcularFatorial(numero){
+    let fatorial = 1;
+    for (let i = 1; i <= numero; i++){
+        fatorial *= i;
+    }
+    console.log('O fatorial do número é igual a ' + fatorial);
+}
+calcularFatorial(5);
+
+
+//14) Inverter uma String:
+//Crie uma função que inverta uma string fornecida pelo usuário.
+function inverterStrint(string){
+    
+}
+
+//15) Contar Quantas Vezes uma Letra Aparece:
+//Crie uma função que conte quantas vezes uma letra aparece em uma palavra fornecida pelo usuário.
+
+//16) Criar uma Sequência de Fibonacci:
+//Crie uma função que exiba os primeiros N números da sequência de Fibonacci.
 
 //12) Contar até um número especificado:
 //Crie uma função que conte de 1 até o número fornecido pelo usuário.

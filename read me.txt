@@ -1,0 +1,2 @@
+Para rodar o código via VS Code, estou utilizando a extensão "Code Runner".
+Atalho para rodar: Ctrl + Alt + N
