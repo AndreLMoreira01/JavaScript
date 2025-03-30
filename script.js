@@ -138,26 +138,42 @@ calcularFatorial(5);
 //14) Inverter uma String:
 //Crie uma função que inverta uma string fornecida pelo usuário.
 function inverterStrint(string){
-    
+    return string.split('').reverse().join('');
 }
 
-//15) Contar Quantas Vezes uma Letra Aparece:
-//Crie uma função que conte quantas vezes uma letra aparece em uma palavra fornecida pelo usuário.
+console.log(inverterStrint("Hello, world!"));
+console.log(inverterStrint("Oie"));
 
-//16) Criar uma Sequência de Fibonacci:
-//Crie uma função que exiba os primeiros N números da sequência de Fibonacci.
-
-//12) Contar até um número especificado:
-//Crie uma função que conte de 1 até o número fornecido pelo usuário.
-
-//13) Calcular o Fatorial de um Número:
-//Crie uma função que calcule o fatorial de um número.
-
-//14) Inverter uma String:
-//Crie uma função que inverta uma string fornecida pelo usuário.
+//split('') → Divide a string em um array de caracteres.
+//reverse() → Inverte a ordem dos elementos do array.
+//join('') → Junta os elementos do array de volta em uma string.
 
 //15) Contar Quantas Vezes uma Letra Aparece:
 //Crie uma função que conte quantas vezes uma letra aparece em uma palavra fornecida pelo usuário.
+function contarLetra(string, caracter){
+    return string.split(caracter).length -1;
+}
+console.log(contarLetra("banana", "a"));
+
+//Precisamos dos parâmetros string e caracter porque queremos contar um caractere específico dentro de um texto.
+//Usamos split(caracter) para quebrar a string e contar quantas partes ela foi dividida.
+//Fazemos length - 1 porque o número de ocorrências do caractere será sempre um a menos que o tamanho do array gerado.
+//Exemplo: "banana".split("a");"
+//          ["b", "n", "n", ""]
+
 
 //16) Criar uma Sequência de Fibonacci:
 //Crie uma função que exiba os primeiros N números da sequência de Fibonacci.
+function exibirFibonacci(n) {
+    let fibonacci = [0, 1];
+
+    for (let i = 2; i < n; i++) {
+        fibonacci.push(fibonacci[i - 1] + fibonacci[i - 2]);
+    }
+
+    return fibonacci.slice(0, n); // Retorna apenas os N primeiros números
+}
+
+// Exemplo de uso:
+console.log(exibirFibonacci(10)); 
+// Saída: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
