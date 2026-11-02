@@ -177,3 +177,69 @@ function exibirFibonacci(n) {
 // Exemplo de uso:
 console.log(exibirFibonacci(10)); 
 // Saída: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+
+//Strings in JavaScript
+let singleQuotes = 'This is a string';
+console.log(singleQuotes);
+
+let doubleQuotes = "This is also a string";
+console.log(doubleQuotes);
+
+let myName = "André";
+console.log(myName);
+
+let myNameIs = "Slim Shady";
+console.log(myNameIs);
+
+let game = "God Of War";
+console.log(game);
+
+game = "Fallout 4";
+console.log(game);
+
+const str = "this is a string in js!";
+
+
+//String Concatenation
+let firstName = "Zé";
+let lastName = "Ninguém";
+
+let fullName = firstName + " " + lastName; 
+console.log(fullName); // Zé Ninguém
+
+let greeting = 'Hello';
+greeting += ', André!';
+
+console.log(greeting); // Hello, André!
+
+let str1 = 'Hello';
+let str2 = 'World';
+
+let result = str1.concat(' ', str2); 
+console.log(result); // Hello World
+
+let cor1 = 'Amarelo';
+let cor2 = 'Roxo';
+
+let cores = cor1.concat(' ', cor2);
+console.log(cores);
+
+
+console.log("Hello, world!");
+
+let num = 5;
+console.log(num); // 5
+
+let name = "Alice";
+console.log("Hello, " + name + "!"); // Hello, Alice!
+
+
+//You can also pass in multiple values to console.log() separated by commas. For example:
+
+//let name = "Alice";
+//let age = 25;
+//console.log("Name:", name, "Age:", age); // Name: Alice Age: 25
+
+const age = 10;
+console.log(age);
